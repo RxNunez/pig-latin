@@ -6,9 +6,11 @@ var result = userInput;
   }else if((userInput[0] === "a") || (userInput[0] === "e") || (userInput[0] === "i") || (userInput[0] === "o") || (userInput[0] === "u")){
     // alert("Entered data contains vowel");
   result = userInput + "way";
-  }else {
-    alert(userInput.slice(1)+ userInput[0] + "ay");
+}else if((userInput[0] !== "a") || (userInput[0] !== "e") || (userInput[0] !== "i") || (userInput[0] !== "o") || (userInput[0] !== "u")){
+    result = userInput.slice(1)+ userInput[0] + "ay";
     // alert("not a cons");
+  }else if((userInput[0] !== "a") || (userInput[0] !== "e") || (userInput[0] !== "i") || (userInput[0] !== "o") || (userInput[0] !== "u")){
+    alert(userInput.slice(2)+ userInput[0] + userInput[0] + "ay")
   }
   return result;
 }
